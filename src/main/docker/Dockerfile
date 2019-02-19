@@ -1,4 +1,4 @@
-FROM 47.110.53.235:8089/shanglv51/java:v0.2
+FROM openjdk
 
 #将本地文件挂载到当前容器
 VOLUME /tmp
