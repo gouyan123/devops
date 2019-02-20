@@ -42,7 +42,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <imageName>${project.artifactId}:${project.version}</imageName>
+                    <imageName>192.168.35.100/devops/${project.artifactId}:${project.version}</imageName>
                     <!--将jar包和Dockerfile放到 同一个文件夹docker中-->
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
@@ -53,6 +53,8 @@
                             <include>${artifactId}-${version}.jar</include>
                         </resource>
                     </resources>
+                    <serverId>harbor</serverId>
+                    <registryUrl>http://192.168.35.100</registryUrl>
                 </configuration>
             </plugin>
         </plugins>
