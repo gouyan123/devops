@@ -60,19 +60,11 @@
                     <registryUrl>http://192.168.35.100</registryUrl>
                 </configuration>
             </plugin>
-<<<<<<< HEAD
             <plugin>
         		<groupId>org.sonarsource.scanner.maven</groupId>
         		<artifactId>sonar-maven-plugin</artifactId>
          		<version>3.4.0.905</version>
  			</plugin>
-=======
-	   <plugin>
-	       <groupId>org.sonarsource.scanner.maven</groupId>
-	       <artifactId>sonar-maven-plugin</artifactId>
-	       <version>3.4.0.905</version>
-	   </plugin>
->>>>>>> df7d9afabf28ed102975b36f683f38e665263ada
         </plugins>
     </build>
 
